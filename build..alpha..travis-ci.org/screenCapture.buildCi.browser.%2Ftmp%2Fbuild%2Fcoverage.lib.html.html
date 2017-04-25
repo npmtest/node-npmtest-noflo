@@ -1,5 +1,5 @@
 <html lang="en"><head>
-    <title>Code coverage report for node-npmtest-noflo/node_modules/noflo/spec/Subgraph.js</title>
+    <title>Code coverage report for node-npmtest-noflo/node_modules/noflo/components/Graph.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,23 +192,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-noflo">npmtest-noflo (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-noflo/node_modules/noflo/spec/Subgraph.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-noflo/node_modules/noflo/components/Graph.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">0.92% <small>(4 / 433)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">14.51% <small>(28 / 193)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">11.11% <small>(5 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">1.33% <small>(1 / 75)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 97)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">9.52% <small>(4 / 42)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">0.92% <small>(4 / 433)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">10.81% <small>(20 / 185)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-noflo/node_modules/noflo/spec/</a> » Subgraph.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-noflo/node_modules/noflo/components/</a> » Graph.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -495,447 +495,28 @@
 281
 282
 283
-284
-285
-286
-287
-288
-289
-290
-291
-292
-293
-294
-295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308
-309
-310
-311
-312
-313
-314
-315
-316
-317
-318
-319
-320
-321
-322
-323
-324
-325
-326
-327
-328
-329
-330
-331
-332
-333
-334
-335
-336
-337
-338
-339
-340
-341
-342
-343
-344
-345
-346
-347
-348
-349
-350
-351
-352
-353
-354
-355
-356
-357
-358
-359
-360
-361
-362
-363
-364
-365
-366
-367
-368
-369
-370
-371
-372
-373
-374
-375
-376
-377
-378
-379
-380
-381
-382
-383
-384
-385
-386
-387
-388
-389
-390
-391
-392
-393
-394
-395
-396
-397
-398
-399
-400
-401
-402
-403
-404
-405
-406
-407
-408
-409
-410
-411
-412
-413
-414
-415
-416
-417
-418
-419
-420
-421
-422
-423
-424
-425
-426
-427
-428
-429
-430
-431
-432
-433
-434
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450
-451
-452
-453
-454
-455
-456
-457
-458
-459
-460
-461
-462
-463
-464
-465
-466
-467
-468
-469
-470
-471
-472
-473
-474
-475
-476
-477
-478
-479
-480
-481
-482
-483
-484
-485
-486
-487
-488
-489
-490
-491
-492
-493
-494
-495
-496
-497
-498
-499
-500
-501
-502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550
-551
-552
-553
-554
-555
-556
-557
-558
-559
-560
-561
-562
-563
-564
-565
-566
-567
-568
-569
-570
-571
-572
-573
-574
-575
-576
-577
-578
-579
-580
-581
-582
-583
-584
-585
-586
-587
-588
-589
-590
-591
-592
-593
-594
-595
-596
-597
-598
-599
-600
-601
-602
-603
-604
-605
-606
-607
-608
-609
-610
-611
-612
-613
-614
-615
-616
-617
-618
-619
-620
-621
-622
-623
-624
-625
-626
-627
-628
-629
-630
-631
-632
-633
-634
-635
-636
-637
-638
-639
-640
-641
-642
-643
-644
-645
-646
-647
-648
-649
-650
-651
-652
-653
-654
-655
-656
-657
-658
-659
-660
-661
-662
-663
-664
-665
-666
-667
-668
-669
-670
-671
-672
-673
-674
-675</td><td class="line-coverage"><span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
-<span class="cline-any cline-yes">2</span>
+284</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">6</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -944,74 +525,35 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1019,68 +561,26 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1092,44 +592,15 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1138,10 +609,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1149,137 +617,45 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1287,72 +663,35 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1361,97 +700,40 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1459,786 +741,331 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var chai, noflo, path, root, urlPrefix;
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function() {
+  var Graph, noflo,
+    extend = function(child, parent) { for (var key in parent) { <span class="missing-if-branch" title="else path not taken">E</span>if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
 &nbsp;
-<span class="missing-if-branch" title="else path not taken">E</span>if (typeof process !== 'undefined' &amp;&amp; process.execPath &amp;&amp; process.execPath.match(/node|iojs/)) {
-  <span class="missing-if-branch" title="else path not taken">E</span>if (!chai) {
-    chai = require('chai');
-  }
-<span class="cstat-no" title="statement not covered">  noflo = require('../src/lib/NoFlo.coffee');</span>
-<span class="cstat-no" title="statement not covered">  path = require('path');</span>
-<span class="cstat-no" title="statement not covered">  root = path.resolve(__dirname, '../');</span>
-<span class="cstat-no" title="statement not covered">  urlPrefix = './';</span>
-} else {
-<span class="cstat-no" title="statement not covered">  noflo = require('noflo');</span>
-<span class="cstat-no" title="statement not covered">  root = 'noflo';</span>
-<span class="cstat-no" title="statement not covered">  urlPrefix = '/';</span>
-}
+  noflo = require("../lib/NoFlo");
 &nbsp;
-<span class="cstat-no" title="statement not covered">describe('NoFlo Graph component', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">  var Split, SubgraphMerge, c, g, loader;</span>
-<span class="cstat-no" title="statement not covered">  c = null;</span>
-<span class="cstat-no" title="statement not covered">  g = null;</span>
-<span class="cstat-no" title="statement not covered">  loader = null;</span>
-<span class="cstat-no" title="statement not covered">  before(<span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">    loader = new noflo.ComponentLoader(root);</span>
-<span class="cstat-no" title="statement not covered">    loader.listComponents(done);</span>
-<span class="cstat-no" title="statement not covered">    return done;</span>
-  });
-<span class="cstat-no" title="statement not covered">  beforeEach(<span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">    loader.load('Graph', <span class="fstat-no" title="function not covered">function(err, instance) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (err) {</span>
-<span class="cstat-no" title="statement not covered">        return done(err);</span>
-      }
-<span class="cstat-no" title="statement not covered">      c = instance;</span>
-<span class="cstat-no" title="statement not covered">      g = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">      c.inPorts.graph.attach(g);</span>
-<span class="cstat-no" title="statement not covered">      return done();</span>
-    });
-  });
-<span class="cstat-no" title="statement not covered">  Split = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var inst;</span>
-<span class="cstat-no" title="statement not covered">    inst = new noflo.Component;</span>
-<span class="cstat-no" title="statement not covered">    inst.inPorts.add('in', {</span>
-      datatype: 'all'
-    });
-<span class="cstat-no" title="statement not covered">    inst.outPorts.add('out', {</span>
-      datatype: 'all'
-    });
-<span class="cstat-no" title="statement not covered">    return inst.process(<span class="fstat-no" title="function not covered">function(input, output) {</span></span>
-<span class="cstat-no" title="statement not covered">      var data;</span>
-<span class="cstat-no" title="statement not covered">      data = input.getData('in');</span>
-<span class="cstat-no" title="statement not covered">      return output.sendDone({</span>
-        out: data
-      });
-    });
-  };
-<span class="cstat-no" title="statement not covered">  SubgraphMerge = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var inst;</span>
-<span class="cstat-no" title="statement not covered">    inst = new noflo.Component;</span>
-<span class="cstat-no" title="statement not covered">    inst.inPorts.add('in', {</span>
-      datatype: 'all'
-    });
-<span class="cstat-no" title="statement not covered">    inst.outPorts.add('out', {</span>
-      datatype: 'all'
-    });
-<span class="cstat-no" title="statement not covered">    inst.forwardBrackets = {};</span>
-<span class="cstat-no" title="statement not covered">    return inst.process(<span class="fstat-no" title="function not covered">function(input, output) {</span></span>
-<span class="cstat-no" title="statement not covered">      var packet;</span>
-<span class="cstat-no" title="statement not covered">      packet = input.get('in');</span>
-<span class="cstat-no" title="statement not covered">      if (packet.type !== 'data') {</span>
-<span class="cstat-no" title="statement not covered">        return output.done();</span>
-      }
-<span class="cstat-no" title="statement not covered">      return output.sendDone({</span>
-        out: packet.data
-      });
-    });
-  };
-<span class="cstat-no" title="statement not covered">  describe('initially', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    it('should be ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.ready).to.be["true"];</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should not contain a network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.network).to.be["null"];</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should have a baseDir', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.baseDir).to.equal(root);</span>
-    });
-<span class="cstat-no" title="statement not covered">    return it('should only have the graph inport', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      chai.expect(c.inPorts.ports).to.have.keys(['graph']);</span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.outPorts.ports).to.be.empty;</span>
-    });
-  });
-<span class="cstat-no" title="statement not covered">  describe('with JSON graph definition', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    it('should emit a ready event after network has been loaded', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["true"];</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function(network) {</span></span>
-<span class="cstat-no" title="statement not covered">        network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        network.loader.registerComponent('', 'Merge', SubgraphMerge);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send({</span>
-        processes: {
-          Split: {
-            component: 'Split'
-          },
-          Merge: {
-            component: 'Merge'
-          }
+  Graph = (function(superClass) {
+    extend(Graph, superClass);
+&nbsp;
+<span class="fstat-no" title="function not covered">    function Graph(metadata1) {</span>
+<span class="cstat-no" title="statement not covered">      this.metadata = metadata1;</span>
+<span class="cstat-no" title="statement not covered">      this.network = null;</span>
+<span class="cstat-no" title="statement not covered">      this.ready = true;</span>
+<span class="cstat-no" title="statement not covered">      this.started = false;</span>
+<span class="cstat-no" title="statement not covered">      this.starting = false;</span>
+<span class="cstat-no" title="statement not covered">      this.baseDir = null;</span>
+<span class="cstat-no" title="statement not covered">      this.loader = null;</span>
+<span class="cstat-no" title="statement not covered">      this.load = 0;</span>
+<span class="cstat-no" title="statement not covered">      this.inPorts = new noflo.InPorts({</span>
+        graph: {
+          datatype: 'all',
+          description: 'NoFlo graph definition to be used with the subgraph component',
+          required: true
         }
       });
-    });
-<span class="cstat-no" title="statement not covered">    it('should expose available ports', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.inPorts.ports).to.have.keys(['graph']);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.outPorts.ports).to.be.empty;</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
+<span class="cstat-no" title="statement not covered">      this.outPorts = new noflo.OutPorts;</span>
+<span class="cstat-no" title="statement not covered">      this.inPorts.graph.on('ip', (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function(packet) {</span></span>
+<span class="cstat-no" title="statement not covered">          if (packet.type !== 'data') {</span>
+<span class="cstat-no" title="statement not covered">            return;</span>
           }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send({</span>
-        processes: {
-          Split: {
-            component: 'Split'
-          },
-          Merge: {
-            component: 'Merge'
-          }
-        },
-        connections: [
-          {
-            src: {
-              process: 'Merge',
-              port: 'out'
-            },
-            tgt: {
-              process: 'Split',
-              port: 'in'
+<span class="cstat-no" title="statement not covered">          return _this.setGraph(packet.data, <span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">            if (err) {</span>
+<span class="cstat-no" title="statement not covered">              return _this.error(err);</span>
             }
-          }
-        ]
-      });
-    });
-<span class="cstat-no" title="statement not covered">    it('should update description from the graph', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["true"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.description).to.equal('Hello, World!');</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function(network) {</span></span>
-<span class="cstat-no" title="statement not covered">        network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.description).to.equal('Hello, World!');</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send({</span>
-        properties: {
-          description: 'Hello, World!'
-        },
-        processes: {
-          Split: {
-            component: 'Split'
-          }
+          });
+        };
+      })(this));
+    }
+&nbsp;
+    Graph.prototype.setGraph = <span class="fstat-no" title="function not covered">function(graph, callback) {</span>
+<span class="cstat-no" title="statement not covered">      this.ready = false;</span>
+<span class="cstat-no" title="statement not covered">      if (typeof graph === 'object') {</span>
+<span class="cstat-no" title="statement not covered">        if (typeof graph.addNode === 'function') {</span>
+<span class="cstat-no" title="statement not covered">          this.createNetwork(graph, callback);</span>
+<span class="cstat-no" title="statement not covered">          return;</span>
         }
-      });
-    });
-<span class="cstat-no" title="statement not covered">    it('should expose only exported ports when they exist', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.inPorts.ports).to.have.keys(['graph']);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.outPorts.ports).to.have.keys(['out']);</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send({</span>
-        outports: {
-          out: {
-            process: 'Split',
-            port: 'out'
-          }
-        },
-        processes: {
-          Split: {
-            component: 'Split'
-          },
-          Merge: {
-            component: 'Merge'
-          }
-        },
-        connections: [
-          {
-            src: {
-              process: 'Merge',
-              port: 'out'
-            },
-            tgt: {
-              process: 'Split',
-              port: 'in'
+<span class="cstat-no" title="statement not covered">        noflo.graph.loadJSON(graph, (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function(err, instance) {</span></span>
+<span class="cstat-no" title="statement not covered">            if (err) {</span>
+<span class="cstat-no" title="statement not covered">              return callback(err);</span>
             }
-          }
-        ]
-      });
-    });
-<span class="cstat-no" title="statement not covered">    return it('should be able to run the graph', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var ins, out;</span>
-<span class="cstat-no" title="statement not covered">        ins = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        out = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        c.inPorts['in'].attach(ins);</span>
-<span class="cstat-no" title="statement not covered">        c.outPorts['out'].attach(out);</span>
-<span class="cstat-no" title="statement not covered">        out.on('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(data).to.equal('Foo');</span>
-<span class="cstat-no" title="statement not covered">          return done();</span>
-        });
-<span class="cstat-no" title="statement not covered">        return ins.send('Foo');</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">            instance.baseDir = _this.baseDir;</span>
+<span class="cstat-no" title="statement not covered">            return _this.createNetwork(instance, callback);</span>
+          };
+        })(this));
+<span class="cstat-no" title="statement not covered">        return;</span>
+      }
+<span class="cstat-no" title="statement not covered">      if (graph.substr(0, 1) !== "/" &amp;&amp; graph.substr(1, 1) !== ":" &amp;&amp; process &amp;&amp; process.cwd) {</span>
+<span class="cstat-no" title="statement not covered">        graph = (process.cwd()) + "/" + graph;</span>
+      }
+<span class="cstat-no" title="statement not covered">      return noflo.graph.loadFile(graph, (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function(err, instance) {</span></span>
 <span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
+<span class="cstat-no" title="statement not covered">            return callback(err);</span>
           }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send({</span>
-        inports: {
-          "in": {
-            process: 'Merge',
-            port: 'in'
+<span class="cstat-no" title="statement not covered">          instance.baseDir = _this.baseDir;</span>
+<span class="cstat-no" title="statement not covered">          return _this.createNetwork(instance, callback);</span>
+        };
+      })(this));
+    };
+&nbsp;
+    Graph.prototype.createNetwork = <span class="fstat-no" title="function not covered">function(graph, callback) {</span>
+<span class="cstat-no" title="statement not covered">      this.description = graph.properties.description || '';</span>
+<span class="cstat-no" title="statement not covered">      this.icon = graph.properties.icon || this.icon;</span>
+<span class="cstat-no" title="statement not covered">      if (!graph.name) {</span>
+<span class="cstat-no" title="statement not covered">        graph.name = this.nodeId;</span>
+      }
+<span class="cstat-no" title="statement not covered">      graph.componentLoader = this.loader;</span>
+<span class="cstat-no" title="statement not covered">      return noflo.createNetwork(graph, (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function(err, network1) {</span></span>
+<span class="cstat-no" title="statement not covered">          _this.network = network1;</span>
+<span class="cstat-no" title="statement not covered">          if (err) {</span>
+<span class="cstat-no" title="statement not covered">            return callback(err);</span>
           }
-        },
-        outports: {
-          out: {
-            process: 'Split',
-            port: 'out'
-          }
-        },
-        processes: {
-          Split: {
-            component: 'Split'
-          },
-          Merge: {
-            component: 'Merge'
-          }
-        },
-        connections: [
-          {
-            src: {
-              process: 'Merge',
-              port: 'out'
-            },
-            tgt: {
-              process: 'Split',
-              port: 'in'
+<span class="cstat-no" title="statement not covered">          _this.emit('network', _this.network);</span>
+<span class="cstat-no" title="statement not covered">          _this.subscribeNetwork(_this.network);</span>
+<span class="cstat-no" title="statement not covered">          return _this.network.connect(<span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">            var name, node, ref;</span>
+<span class="cstat-no" title="statement not covered">            if (err) {</span>
+<span class="cstat-no" title="statement not covered">              return callback(err);</span>
             }
+<span class="cstat-no" title="statement not covered">            ref = _this.network.processes;</span>
+<span class="cstat-no" title="statement not covered">            for (name in ref) {</span>
+<span class="cstat-no" title="statement not covered">              node = ref[name];</span>
+<span class="cstat-no" title="statement not covered">              _this.findEdgePorts(name, node);</span>
+            }
+<span class="cstat-no" title="statement not covered">            _this.setToReady();</span>
+<span class="cstat-no" title="statement not covered">            return callback();</span>
+          });
+        };
+      })(this), true);
+    };
+&nbsp;
+    Graph.prototype.subscribeNetwork = <span class="fstat-no" title="function not covered">function(network) {</span>
+<span class="cstat-no" title="statement not covered">      var contexts;</span>
+<span class="cstat-no" title="statement not covered">      contexts = [];</span>
+<span class="cstat-no" title="statement not covered">      this.network.on('start', (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">          var ctx;</span>
+<span class="cstat-no" title="statement not covered">          ctx = {};</span>
+<span class="cstat-no" title="statement not covered">          contexts.push(ctx);</span>
+<span class="cstat-no" title="statement not covered">          return _this.activate(ctx);</span>
+        };
+      })(this));
+<span class="cstat-no" title="statement not covered">      return this.network.on('end', (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">          var ctx;</span>
+<span class="cstat-no" title="statement not covered">          ctx = contexts.pop();</span>
+<span class="cstat-no" title="statement not covered">          if (!ctx) {</span>
+<span class="cstat-no" title="statement not covered">            return;</span>
           }
-        ]
-      });
-    });
-  });
-<span class="cstat-no" title="statement not covered">  describe('with a Graph instance', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var gr;</span>
-<span class="cstat-no" title="statement not covered">    gr = new noflo.Graph('Hello, world');</span>
-<span class="cstat-no" title="statement not covered">    gr.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">    gr.addNode('Split', 'Split');</span>
-<span class="cstat-no" title="statement not covered">    gr.addNode('Merge', 'Merge');</span>
-<span class="cstat-no" title="statement not covered">    gr.addEdge('Merge', 'out', 'Split', 'in');</span>
-<span class="cstat-no" title="statement not covered">    gr.addInport('in', 'Merge', 'in');</span>
-<span class="cstat-no" title="statement not covered">    gr.addOutport('out', 'Split', 'out');</span>
-<span class="cstat-no" title="statement not covered">    it('should emit a ready event after network has been loaded', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["true"];</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      g.send(gr);</span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.ready).to.be["false"];</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should expose available ports', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.inPorts.ports).to.have.keys(['graph', 'in']);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.outPorts.ports).to.have.keys(['out']);</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(gr);</span>
-    });
-<span class="cstat-no" title="statement not covered">    return it('should be able to run the graph', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var ins, out;</span>
-<span class="cstat-no" title="statement not covered">        ins = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        out = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        c.inPorts['in'].attach(ins);</span>
-<span class="cstat-no" title="statement not covered">        c.outPorts['out'].attach(out);</span>
-<span class="cstat-no" title="statement not covered">        out.on('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(data).to.equal('Foo');</span>
-<span class="cstat-no" title="statement not covered">          return done();</span>
-        });
-<span class="cstat-no" title="statement not covered">        return ins.send('Foo');</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(gr);</span>
-    });
-  });
-<span class="cstat-no" title="statement not covered">  describe('with a FBP file with INPORTs and OUTPORTs', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var file;</span>
-<span class="cstat-no" title="statement not covered">    file = urlPrefix + "spec/fixtures/subgraph.fbp";</span>
-<span class="cstat-no" title="statement not covered">    it('should emit a ready event after network has been loaded', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["true"];</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      g.send(file);</span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.ready).to.be["false"];</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should expose available ports', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.inPorts.ports).to.have.keys(['graph', 'in']);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.outPorts.ports).to.have.keys(['out']);</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(file);</span>
-    });
-<span class="cstat-no" title="statement not covered">    return it('should be able to run the graph', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var ins, out, received;</span>
-<span class="cstat-no" title="statement not covered">        ins = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        out = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        c.inPorts['in'].attach(ins);</span>
-<span class="cstat-no" title="statement not covered">        c.outPorts['out'].attach(out);</span>
-<span class="cstat-no" title="statement not covered">        received = false;</span>
-<span class="cstat-no" title="statement not covered">        out.on('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(data).to.equal('Foo');</span>
-<span class="cstat-no" title="statement not covered">          return received = true;</span>
-        });
-<span class="cstat-no" title="statement not covered">        out.on('disconnect', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(received, 'should have transmitted data').to.equal(true);</span>
-<span class="cstat-no" title="statement not covered">          return done();</span>
-        });
-<span class="cstat-no" title="statement not covered">        ins.connect();</span>
-<span class="cstat-no" title="statement not covered">        ins.send('Foo');</span>
-<span class="cstat-no" title="statement not covered">        return ins.disconnect();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(file);</span>
-    });
-  });
-<span class="cstat-no" title="statement not covered">  describe('with a FBP file with legacy EXPORTS', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var file;</span>
-<span class="cstat-no" title="statement not covered">    file = urlPrefix + "spec/fixtures/subgraph_legacy.fbp";</span>
-<span class="cstat-no" title="statement not covered">    it('should emit a ready event after network has been loaded', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["true"];</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      g.send(file);</span>
-<span class="cstat-no" title="statement not covered">      return chai.expect(c.ready).to.be["false"];</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should expose available ports', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.inPorts.ports).to.have.keys(['graph', 'in']);</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.outPorts.ports).to.have.keys(['out']);</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(file);</span>
-    });
-<span class="cstat-no" title="statement not covered">    it('should have disambiguated the exported ports', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network.graph.exports).to.be.empty;</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network.graph.inports).to.be.not.empty;</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network.graph.inports["in"]).to.be.an('object');</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network.graph.outports).to.be.not.empty;</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network.graph.outports.out).to.be.an('object');</span>
-<span class="cstat-no" title="statement not covered">        return done();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        return c.network.loader.components.Merge = SubgraphMerge;</span>
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(file);</span>
-    });
-<span class="cstat-no" title="statement not covered">    return it('should be able to run the graph', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      c.baseDir = root;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      c.once('ready', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        var ins, out, received;</span>
-<span class="cstat-no" title="statement not covered">        ins = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        out = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">        c.inPorts['in'].attach(ins);</span>
-<span class="cstat-no" title="statement not covered">        c.outPorts['out'].attach(out);</span>
-<span class="cstat-no" title="statement not covered">        received = false;</span>
-<span class="cstat-no" title="statement not covered">        out.on('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(data).to.equal('Foo');</span>
-<span class="cstat-no" title="statement not covered">          return received = true;</span>
-        });
-<span class="cstat-no" title="statement not covered">        out.on('disconnect', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">          chai.expect(received, 'should have transmitted data').to.equal(true);</span>
-<span class="cstat-no" title="statement not covered">          return done();</span>
-        });
-<span class="cstat-no" title="statement not covered">        ins.connect();</span>
-<span class="cstat-no" title="statement not covered">        ins.send('Foo');</span>
-<span class="cstat-no" title="statement not covered">        return ins.disconnect();</span>
-      });
-<span class="cstat-no" title="statement not covered">      c.once('network', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.ready).to.be["false"];</span>
-<span class="cstat-no" title="statement not covered">        chai.expect(c.network).not.to.be["null"];</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Split = Split;</span>
-<span class="cstat-no" title="statement not covered">        c.network.loader.components.Merge = SubgraphMerge;</span>
-<span class="cstat-no" title="statement not covered">        return c.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (err) {</span>
-<span class="cstat-no" title="statement not covered">            return done(err);</span>
-          }
-        });
-      });
-<span class="cstat-no" title="statement not covered">      return g.send(file);</span>
-    });
-  });
-<span class="cstat-no" title="statement not covered">  return describe('when a subgraph is used as a component', <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">    var createSplit, grDefaults, grInitials;</span>
-<span class="cstat-no" title="statement not covered">    createSplit = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">      c = new noflo.Component;</span>
-<span class="cstat-no" title="statement not covered">      c.inPorts.add('in', {</span>
-        required: true,
-        datatype: 'string',
-        "default": 'default-value'
-      });
-<span class="cstat-no" title="statement not covered">      c.outPorts.add('out', {</span>
-        datatype: 'string'
-      });
-<span class="cstat-no" title="statement not covered">      return c.process(<span class="fstat-no" title="function not covered">function(input, output) {</span></span>
-<span class="cstat-no" title="statement not covered">        var data;</span>
-<span class="cstat-no" title="statement not covered">        data = input.getData('in');</span>
-<span class="cstat-no" title="statement not covered">        return output.sendDone({</span>
-          out: data
-        });
+<span class="cstat-no" title="statement not covered">          return _this.deactivate(ctx);</span>
+        };
+      })(this));
+    };
+&nbsp;
+    Graph.prototype.isExportedInport = <span class="fstat-no" title="function not covered">function(port, nodeName, portName) {</span>
+<span class="cstat-no" title="statement not covered">      var exported, i, len, priv, pub, ref, ref1;</span>
+<span class="cstat-no" title="statement not covered">      ref = this.network.graph.inports;</span>
+<span class="cstat-no" title="statement not covered">      for (pub in ref) {</span>
+<span class="cstat-no" title="statement not covered">        priv = ref[pub];</span>
+<span class="cstat-no" title="statement not covered">        if (!(priv.process === nodeName &amp;&amp; priv.port === portName)) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        return pub;</span>
+      }
+<span class="cstat-no" title="statement not covered">      ref1 = this.network.graph.exports;</span>
+<span class="cstat-no" title="statement not covered">      for (i = 0, len = ref1.length; i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered">        exported = ref1[i];</span>
+<span class="cstat-no" title="statement not covered">        if (!(exported.process === nodeName &amp;&amp; exported.port === portName)) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        this.network.graph.checkTransactionStart();</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.removeExport(exported["public"]);</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.addInport(exported["public"], exported.process, exported.port, exported.metadata);</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.checkTransactionEnd();</span>
+<span class="cstat-no" title="statement not covered">        return exported["public"];</span>
+      }
+<span class="cstat-no" title="statement not covered">      return false;</span>
+    };
+&nbsp;
+    Graph.prototype.isExportedOutport = <span class="fstat-no" title="function not covered">function(port, nodeName, portName) {</span>
+<span class="cstat-no" title="statement not covered">      var exported, i, len, priv, pub, ref, ref1;</span>
+<span class="cstat-no" title="statement not covered">      ref = this.network.graph.outports;</span>
+<span class="cstat-no" title="statement not covered">      for (pub in ref) {</span>
+<span class="cstat-no" title="statement not covered">        priv = ref[pub];</span>
+<span class="cstat-no" title="statement not covered">        if (!(priv.process === nodeName &amp;&amp; priv.port === portName)) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        return pub;</span>
+      }
+<span class="cstat-no" title="statement not covered">      ref1 = this.network.graph.exports;</span>
+<span class="cstat-no" title="statement not covered">      for (i = 0, len = ref1.length; i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered">        exported = ref1[i];</span>
+<span class="cstat-no" title="statement not covered">        if (!(exported.process === nodeName &amp;&amp; exported.port === portName)) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        this.network.graph.checkTransactionStart();</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.removeExport(exported["public"]);</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.addOutport(exported["public"], exported.process, exported.port, exported.metadata);</span>
+<span class="cstat-no" title="statement not covered">        this.network.graph.checkTransactionEnd();</span>
+<span class="cstat-no" title="statement not covered">        return exported["public"];</span>
+      }
+<span class="cstat-no" title="statement not covered">      return false;</span>
+    };
+&nbsp;
+    Graph.prototype.setToReady = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">      if (typeof process !== 'undefined' &amp;&amp; process.execPath &amp;&amp; process.execPath.indexOf('node') !== -1) {</span>
+<span class="cstat-no" title="statement not covered">        return process.nextTick((<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">            _this.ready = true;</span>
+<span class="cstat-no" title="statement not covered">            return _this.emit('ready');</span>
+          };
+        })(this));
+      } else {
+<span class="cstat-no" title="statement not covered">        return setTimeout((<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">            _this.ready = true;</span>
+<span class="cstat-no" title="statement not covered">            return _this.emit('ready');</span>
+          };
+        })(this), 0);
+      }
+    };
+&nbsp;
+    Graph.prototype.findEdgePorts = <span class="fstat-no" title="function not covered">function(name, process) {</span>
+<span class="cstat-no" title="statement not covered">      var inPorts, outPorts, port, portName, targetPortName;</span>
+<span class="cstat-no" title="statement not covered">      inPorts = process.component.inPorts.ports || process.component.inPorts;</span>
+<span class="cstat-no" title="statement not covered">      outPorts = process.component.outPorts.ports || process.component.outPorts;</span>
+<span class="cstat-no" title="statement not covered">      for (portName in inPorts) {</span>
+<span class="cstat-no" title="statement not covered">        port = inPorts[portName];</span>
+<span class="cstat-no" title="statement not covered">        targetPortName = this.isExportedInport(port, name, portName);</span>
+<span class="cstat-no" title="statement not covered">        if (targetPortName === false) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        this.inPorts.add(targetPortName, port);</span>
+<span class="cstat-no" title="statement not covered">        this.inPorts[targetPortName].once('connect', (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">            if (_this.starting) {</span>
+<span class="cstat-no" title="statement not covered">              return;</span>
+            }
+<span class="cstat-no" title="statement not covered">            if (_this.isStarted()) {</span>
+<span class="cstat-no" title="statement not covered">              return;</span>
+            }
+<span class="cstat-no" title="statement not covered">            return _this.start(<span class="fstat-no" title="function not covered">function() {</span>});</span>
+          };
+        })(this));
+      }
+<span class="cstat-no" title="statement not covered">      for (portName in outPorts) {</span>
+<span class="cstat-no" title="statement not covered">        port = outPorts[portName];</span>
+<span class="cstat-no" title="statement not covered">        targetPortName = this.isExportedOutport(port, name, portName);</span>
+<span class="cstat-no" title="statement not covered">        if (targetPortName === false) {</span>
+<span class="cstat-no" title="statement not covered">          continue;</span>
+        }
+<span class="cstat-no" title="statement not covered">        this.outPorts.add(targetPortName, port);</span>
+      }
+<span class="cstat-no" title="statement not covered">      return true;</span>
+    };
+&nbsp;
+    Graph.prototype.isReady = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">      return this.ready;</span>
+    };
+&nbsp;
+    Graph.prototype.isSubgraph = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">      return true;</span>
+    };
+&nbsp;
+    Graph.prototype.setUp = <span class="fstat-no" title="function not covered">function(callback) {</span>
+<span class="cstat-no" title="statement not covered">      this.starting = true;</span>
+<span class="cstat-no" title="statement not covered">      if (!this.isReady()) {</span>
+<span class="cstat-no" title="statement not covered">        this.once('ready', (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered">          return <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">            return _this.setUp(callback);</span>
+          };
+        })(this));
+<span class="cstat-no" title="statement not covered">        return;</span>
+      }
+<span class="cstat-no" title="statement not covered">      if (!this.network) {</span>
+<span class="cstat-no" title="statement not covered">        return callback(null);</span>
+      }
+<span class="cstat-no" title="statement not covered">      return this.network.start(<span class="fstat-no" title="function not covered">function(err) {</span></span>
+<span class="cstat-no" title="statement not covered">        if (err) {</span>
+<span class="cstat-no" title="statement not covered">          return callback(err);</span>
+        }
+<span class="cstat-no" title="statement not covered">        this.starting = false;</span>
+<span class="cstat-no" title="statement not covered">        return callback();</span>
       });
     };
-<span class="cstat-no" title="statement not covered">    grDefaults = new noflo.Graph('Child Graph Using Defaults');</span>
-<span class="cstat-no" title="statement not covered">    grDefaults.addNode('SplitIn', 'Split');</span>
-<span class="cstat-no" title="statement not covered">    grDefaults.addNode('SplitOut', 'Split');</span>
-<span class="cstat-no" title="statement not covered">    grDefaults.addInport('in', 'SplitIn', 'in');</span>
-<span class="cstat-no" title="statement not covered">    grDefaults.addOutport('out', 'SplitOut', 'out');</span>
-<span class="cstat-no" title="statement not covered">    grDefaults.addEdge('SplitIn', 'out', 'SplitOut', 'in');</span>
-<span class="cstat-no" title="statement not covered">    grInitials = new noflo.Graph('Child Graph Using Initials');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addNode('SplitIn', 'Split');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addNode('SplitOut', 'Split');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addInport('in', 'SplitIn', 'in');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addOutport('out', 'SplitOut', 'out');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addInitial('initial-value', 'SplitIn', 'in');</span>
-<span class="cstat-no" title="statement not covered">    grInitials.addEdge('SplitIn', 'out', 'SplitOut', 'in');</span>
-<span class="cstat-no" title="statement not covered">    it('should send defaults', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      var cl;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      cl = new noflo.ComponentLoader(root);</span>
-<span class="cstat-no" title="statement not covered">      cl.listComponents(<span class="fstat-no" title="function not covered">function(err, components) {</span></span>
+&nbsp;
+    Graph.prototype.tearDown = <span class="fstat-no" title="function not covered">function(callback) {</span>
+<span class="cstat-no" title="statement not covered">      this.starting = false;</span>
+<span class="cstat-no" title="statement not covered">      if (!this.network) {</span>
+<span class="cstat-no" title="statement not covered">        return callback(null);</span>
+      }
+<span class="cstat-no" title="statement not covered">      return this.network.stop(<span class="fstat-no" title="function not covered">function(err) {</span></span>
 <span class="cstat-no" title="statement not covered">        if (err) {</span>
-<span class="cstat-no" title="statement not covered">          return done(err);</span>
+<span class="cstat-no" title="statement not covered">          return callback(err);</span>
         }
-<span class="cstat-no" title="statement not covered">        cl.components.Split = createSplit;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Defaults = grDefaults;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Initials = grInitials;</span>
-<span class="cstat-no" title="statement not covered">        return cl.load('Defaults', <span class="fstat-no" title="function not covered">function(err, inst) {</span></span>
-<span class="cstat-no" title="statement not covered">          var o;</span>
-<span class="cstat-no" title="statement not covered">          o = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">          inst.outPorts.out.attach(o);</span>
-<span class="cstat-no" title="statement not covered">          o.once('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">            chai.expect(data).to.equal('default-value');</span>
-<span class="cstat-no" title="statement not covered">            return done();</span>
-          });
-<span class="cstat-no" title="statement not covered">          return inst.start();</span>
-        });
+<span class="cstat-no" title="statement not covered">        return callback();</span>
       });
-    });
-<span class="cstat-no" title="statement not covered">    it('should send initials', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      var cl;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      cl = new noflo.ComponentLoader(root);</span>
-<span class="cstat-no" title="statement not covered">      cl.listComponents(<span class="fstat-no" title="function not covered">function(err, components) {</span></span>
-<span class="cstat-no" title="statement not covered">        if (err) {</span>
-<span class="cstat-no" title="statement not covered">          return done(err);</span>
-        }
-<span class="cstat-no" title="statement not covered">        cl.components.Split = createSplit;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Defaults = grDefaults;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Initials = grInitials;</span>
-<span class="cstat-no" title="statement not covered">        return cl.load('Initials', <span class="fstat-no" title="function not covered">function(err, inst) {</span></span>
-<span class="cstat-no" title="statement not covered">          var o;</span>
-<span class="cstat-no" title="statement not covered">          o = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">          inst.outPorts.out.attach(o);</span>
-<span class="cstat-no" title="statement not covered">          o.once('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">            chai.expect(data).to.equal('initial-value');</span>
-<span class="cstat-no" title="statement not covered">            return done();</span>
-          });
-<span class="cstat-no" title="statement not covered">          return inst.start();</span>
-        });
-      });
-    });
-<span class="cstat-no" title="statement not covered">    return it('should not send defaults when an inport is attached externally', <span class="fstat-no" title="function not covered">function(done) {</span></span>
-<span class="cstat-no" title="statement not covered">      var cl;</span>
-<span class="cstat-no" title="statement not covered">      this.timeout(6000);</span>
-<span class="cstat-no" title="statement not covered">      cl = new noflo.ComponentLoader(root);</span>
-<span class="cstat-no" title="statement not covered">      cl.listComponents(<span class="fstat-no" title="function not covered">function(err, components) {</span></span>
-<span class="cstat-no" title="statement not covered">        if (err) {</span>
-<span class="cstat-no" title="statement not covered">          return done(err);</span>
-        }
-<span class="cstat-no" title="statement not covered">        cl.components.Split = createSplit;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Defaults = grDefaults;</span>
-<span class="cstat-no" title="statement not covered">        cl.components.Initials = grInitials;</span>
-<span class="cstat-no" title="statement not covered">        return cl.load('Defaults', <span class="fstat-no" title="function not covered">function(err, inst) {</span></span>
-<span class="cstat-no" title="statement not covered">          var i, o;</span>
-<span class="cstat-no" title="statement not covered">          i = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">          o = noflo.internalSocket.createSocket();</span>
-<span class="cstat-no" title="statement not covered">          inst.inPorts["in"].attach(i);</span>
-<span class="cstat-no" title="statement not covered">          inst.outPorts.out.attach(o);</span>
-<span class="cstat-no" title="statement not covered">          o.once('data', <span class="fstat-no" title="function not covered">function(data) {</span></span>
-<span class="cstat-no" title="statement not covered">            chai.expect(data).to.equal('Foo');</span>
-<span class="cstat-no" title="statement not covered">            return done();</span>
-          });
-<span class="cstat-no" title="statement not covered">          inst.start();</span>
-<span class="cstat-no" title="statement not covered">          return i.send('Foo');</span>
-        });
-      });
-    });
-  });
-});
+    };
+&nbsp;
+    return Graph;
+&nbsp;
+  })(noflo.Component);
+&nbsp;
+  exports.getComponent = <span class="fstat-no" title="function not covered">function(metadata) {</span>
+<span class="cstat-no" title="statement not covered">    return new Graph(metadata);</span>
+  };
+&nbsp;
+}).call(this);
 &nbsp;
 &nbsp;</pre></td></tr>
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 04:22:10 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 06:58:01 GMT+0000 (UTC)</div>
 </div>
 
 
