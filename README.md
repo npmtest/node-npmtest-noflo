@@ -1,6 +1,6 @@
 # npmtest-noflo
 
-#### test coverage for  [noflo (v0.8.3)](http://noflojs.org/)  [![npm package](https://img.shields.io/npm/v/npmtest-noflo.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-noflo) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-noflo.svg)](https://travis-ci.org/npmtest/node-npmtest-noflo)
+#### basic test coverage for  [noflo (v0.8.3)](http://noflojs.org/)  [![npm package](https://img.shields.io/npm/v/npmtest-noflo.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-noflo) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-noflo.svg)](https://travis-ci.org/npmtest/node-npmtest-noflo)
 
 #### Flow-Based Programming environment for JavaScript
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-noflo/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-noflo/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-noflo/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-noflo/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-noflo/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-noflo/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-noflo/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-noflo/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-noflo/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-noflo/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-noflo/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-noflo/build/coverage.html/index.html)
 
